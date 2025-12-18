@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>form project</title>
+<style>
+body{
+display: flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(to right,purple,lavender);
+margin: 0;
+}
+.box{
+background:lavender;
+padding:50px;
+border-radius:30px;
+width:350px;
+}
+label {
+width: 120px;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<h2 align="center"><i>Fill The Form</i></h2>
+<form action="#" method="post">
+<label>First Name:</label>
+<input type="text" name="fname" required><br><br>
+<label>Last Name:</label>
+<input type="text" name="lname" required><br><br>
+<label>Date of Birth:</label>
+<input type="date" name="dob" required><br><br>
+<label>Email id:</label>
+<input type="email" name="email" required><br><br>
+<label>Phone number:</label>
+<input type="tel" pattern="[0-9]{10}" required"><br><br>
+<label>Gender:</label>
+<span class="gender-group">
+<input type="radio" name="gender" class="gender">male
+<input type="radio" name="gender" class="gender">female
+<input type="radio" name="gender" class="gender">other
+</span><br><br>
+<label>Password:</label>
+<input type="password" name="password" required><br><br>
+<label>Confirm password:</label>
+<input type="password" name="confirm password"><br><br>
+<input type="checkbox" name="terms" required>I agree to all the terms and conditions<br><br>
+<input type="submit" value="Login">
+<input type="reset" value="Clear">
+</form>
+</div>
+</body>
+</html>
